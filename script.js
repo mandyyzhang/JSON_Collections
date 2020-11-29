@@ -112,63 +112,63 @@ let allRestaurants = [
     "name" : "Mango Mango Dessert",
     "picture" : "Mango.jpeg",
     "location": "https://www.google.com/maps/place/Mango+Mango+Dessert/@40.7603288,-73.831405,17z/data=!3m1!4b1!4m5!3m4!1s0x89c26010332a5abd:0x4e4a5cc577af4a01!8m2!3d40.7603288!4d-73.8292163",
-    "type" : "main",
+    "type" : "dessert",
     "rating" : "Review: ✰✰✰✰"
   },
   {
     "name" : "Prince Tea House",
     "picture" : "Prince.jpg",
     "location": "https://www.google.com/maps/place/Prince+Tea+House/@40.7191644,-73.9970042,16.53z/data=!4m5!3m4!1s0x89c259ec9415e72d:0x6217554308abbde9!8m2!3d40.7190154!4d-73.9949034",
-    "type" : "main",
+    "type" : "dessert",
     "rating" : "Review: ✰✰✰✰"
   },
   {
     "name" : "Black Tap",
     "picture" : "BlackTap.jpg",
     "location": "https://www.google.com/maps/place/Black+Tap/@40.7635483,-73.9819514,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258f9cbc9ec63:0x4993a4d346f54e60!8m2!3d40.7635483!4d-73.9797627",
-    "type" : "main",
+    "type" : "dessert",
     "rating" : "Review: ✰✰✰"
   },
   {
     "name" : "Amorino Greenwich Village",
     "picture" : "Amorino.jpg",
     "location": "https://www.google.com/maps/place/Amorino+Greenwich+Village/@40.732905,-73.9960739,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25999e89bb8f7:0x9e7969c334cd78ae!8m2!3d40.732905!4d-73.9938852",
-    "type" : "main",
+    "type" : "dessert",
     "rating" : "Review: ✰✰✰"
   },
   {
     "name" : "Spot Dessert Bar",
     "picture" : "Spot.jpg",
     "location": "https://www.google.com/maps/place/Spot+Dessert+Bar/@40.7591025,-73.8344346,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2600e68d4a9ef:0xddeb1b3b405506a3!8m2!3d40.7591025!4d-73.8322459",
-    "type" : "main",
+    "type" : "dessert",
     "rating" : "Review: ✰✰✰✰"
   },
   {
     "name" : "Sugar Factory",
     "picture" : "Sugar.jpeg",
     "location": "https://www.google.com/maps/place/Sugar+Factory+American+Brasserie/@40.7386207,-74.0080938,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259c0082485ad:0x908ebea45c3a4547!8m2!3d40.7386207!4d-74.0059051",
-    "type" : "main",
+    "type" : "dessert",
     "rating" : "Review: ✰✰✰"
   },
   {
     "name" : "10Below Ice Cream",
     "picture" : "10below.jpeg",
     "location": "https://www.google.com/maps/place/10Below+Ice+Cream/@40.7349161,-74.0072282,14z/data=!4m8!1m2!2m1!1s10Below+Ice+Cream!3m4!1s0x89c259ae5ebd4ac9:0xd72a1f4417b4fd86!8m2!3d40.7499828!4d-73.9921393",
-    "type" : "main",
+    "type" : "dessert",
     "rating" : "Review: ✰✰"
   },
   {
     "name" : "520 Desserts",
     "picture" : "520.jpg",
     "location": "https://www.google.com/maps/place/520+iF+Cha+Dessert+Bar/@40.761058,-73.8353637,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2600f008b55e5:0x8df0d2f2eee87971!8m2!3d40.761058!4d-73.833175",
-    "type" : "main",
+    "type" : "dessert",
     "rating" : "Review: ✰✰✰✰"
   },
   {
     "name" : "Grace Street",
     "picture" : "Grace.jpg",
     "location": "https://www.google.com/maps/place/Grace+Street+Coffee+%26+Desserts/@40.7477172,-73.9887189,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a8e1682bf5:0xea388e8841a2955e!8m2!3d40.7477172!4d-73.9865302",
-    "type" : "main",
+    "type" : "dessert",
     "rating" : "Review: ✰✰✰✰"
   },
 
@@ -183,7 +183,7 @@ function createElementProper(incomingJSON) {
   let newContentElement = document.createElement("DIV");
   newContentElement.classList.add('contentItem');
 
-  let googleMap = document.createElement("a");
+  let googleMap = document.createElement("A");
   googleMap.href = incomingJSON['location'];
   newContentElement.appendChild(googleMap);
 
